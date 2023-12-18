@@ -37,4 +37,9 @@ models:
       +enabled: true #allows us to quickly switch on an off our models
       +materialized: table #every will be materialised as tables in the staging layer
       +shema: stg_northwind #which schema to go an create in our table
-      
+    warehouse:
+      +enabled: true #allows us to quickly switch on an off our models
+      +materialized: table #every will be materialised as tables in the staging layer
+      +shema: dwh_northwind #which schema to go an create in our table
+      dim_date:
+        +materialized: view 
